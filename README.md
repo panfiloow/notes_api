@@ -81,8 +81,8 @@ FastAPI автоматически генерирует интерактивну
 - **Swagger UI**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 - **ReDoc**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-![Swagger UI Screenshot](images\swagger_docs.png)
-![Redoc UI Screenshot](images\redoc_ui.png)
+![Swagger UI Screenshot](images/swagger_docs.png)
+![Redoc UI Screenshot](images/redoc_ui.png)
 
 ## 🧪 Тестирование
 
@@ -91,8 +91,14 @@ FastAPI автоматически генерирует интерактивну
 ```bash
 # Из корня проекта (notes_api/)
 pytest tests/
+```
+
+```bash
 # или для подробного вывода:
 pytest tests/ -v
+```
+
+```bash
 # или с отображением print():
 pytest tests/ -v -s
 ```
