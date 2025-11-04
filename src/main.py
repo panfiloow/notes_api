@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-import uvicorn
 from contextlib import asynccontextmanager
 from .models import Base
 from .database import engine 
@@ -21,6 +20,3 @@ app.include_router(router)
 @app.get('/')
 async def root():
     return {"status": "Server work"}
-
-if __name__ == "__main__":
-    uvicorn.run("src.main:app") 

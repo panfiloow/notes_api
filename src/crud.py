@@ -72,7 +72,7 @@ async def update_note(
 
     return note
 
-@router.delete("/{note_id}")
+@router.delete("/{note_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_note(
     note_id: int,
     db: AsyncSession = Depends(get_db) 
